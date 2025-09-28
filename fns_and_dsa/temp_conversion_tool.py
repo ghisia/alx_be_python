@@ -34,8 +34,6 @@ def main():
     """
     Main function to handle user interaction and temperature conversion.
     """
-    print("Temperature Conversion Tool")
-    print("=" * 30)
     
     try:
         # Get temperature input from user
