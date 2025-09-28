@@ -10,7 +10,16 @@ def convert_to_celsius(fahrenheit):
 def convert_to_fahrenheit(celsius):
     return (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
 
+def change_conversion_factors(new_f_to_c, new_c_to_f):
+
+    global FAHRENHEIT_TO_CELSIUS_FACTOR
+    global CELSIUS_TO_FAHRENHEIT_FACTOR
+    FAHRENHEIT_TO_CELSIUS_FACTOR = new_f_to_c
+    CELSIUS_TO_FAHRENHEIT_FACTOR = new_c_to_f
+    print("Conversion factors updated!")
+
 def main():
+
     try:
 
         temp_input = input("Enter the temperature to convert: ")
