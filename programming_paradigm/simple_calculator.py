@@ -1,4 +1,5 @@
 class  SimpleCalculator :
+    
     def additional (self , a , b):
         return a + b
     
