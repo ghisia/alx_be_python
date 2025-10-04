@@ -20,8 +20,8 @@ def main():
         else:
             print("Insufficient funds.")
     elif command == "display":
-        account.display_balance(amount)
-        print(f"Displayed balance.")
+        account.display_balance()
+        print(f"Displayed balance: ${account.get_balance()}")
     else:
         print("Invalid command.")
 
